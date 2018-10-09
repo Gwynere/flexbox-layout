@@ -28,6 +28,8 @@ Grey dark 3: #999
   --grey-dark-1: #333;
   --grey-dark-2: #777;
   --grey-dark-3: #999;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
 }
 
 * {
@@ -52,4 +54,34 @@ body {
   background: linear-gradient(to right bottom, var(--primary-light), var(--primary-dark)) no-repeat;
   background-size: cover; 
   min-height: 100vh;
+}
+
+/* THE LAYOUT */
+.container{
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--grey-light-2);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
+}
+
+.header{
+  height: 7rem;
+  background: #fff;
+  border-bottom: var(--grey-light-2);
+}
+
+.content{
+  display: flex;
+}
+
+.sidebar{
+  background: var(--grey-dark-1);
+  flex: 0 0 18%;
+}
+
+.hotel-view{
+  background: #fff;
+  flex: 1;
 }
