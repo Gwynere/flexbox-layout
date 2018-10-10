@@ -41,7 +41,7 @@ Grey dark 3: #999
 *::before,
 *::after {
   box-sizing: inherit;
-  font-size: 62.5%;
+  font-size: 10px;
 }
 
 html {
@@ -72,7 +72,7 @@ body {
 .header{
   height: 7rem;
   background: #fff;
-  border-bottom: var(--grey-light-2);
+  border-bottom: 1px solid var(--grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,12 +174,13 @@ body {
   margin-right: 1rem;
 }
 
+
+
+/* SIDE-BAR */
 .content{
   display: flex;
 }
 
-
-/* SIDE-BAR */
 .sidebar{
   background: var(--grey-dark-1);
   flex: 0 0 18%;
@@ -254,8 +255,101 @@ body {
   padding: 2.5rem;
 }
 
+/* HOTEL OVERVIEW */
 .hotel-view{
   background: #fff;
   flex: 1;
   height: 80rem;
+}
+
+/* gallery */
+
+.gallery{
+  display: flex;
+}
+
+.gallery__photo{
+  width: 100%;
+  display: block;
+}
+
+/* hotel overview */
+
+.overview{
+  display: flex;
+  border-bottom: 1px solid var(--grey-light-2);
+  align-items: center;
+}
+
+.overview__heading{
+  font-size: 2.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1.5rem 3rem;
+}
+
+.overview__stars{
+  margin-right: auto;
+  display: flex;
+
+}
+
+.overview__icon-star,
+.overview__icon-location{
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: var(--primary);
+  margin-right: .5rem;
+}
+
+.overview__location{
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.overview__rating{
+  background-color: var(--primary);
+  margin-left: 3rem;
+  color: #fff;
+  align-self: stretch;
+  padding: 0 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview__rating-average{
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: -3px;
+}
+
+.overview__rating-count{
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+/* button inline */
+
+.btn-inline{
+  border: none;
+  color: var(--primary);
+  font-size: inherit;
+  background: transparent;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn-inline:hover{
+  color: var(--grey-dark-1);
+}
+
+.btn-inline:focus{
+  outline: none;
 }
