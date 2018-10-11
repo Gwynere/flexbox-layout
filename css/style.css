@@ -515,3 +515,64 @@ body {
   font-size: 2.2rem;
   font-weight: 300;
 }
+
+
+/* CALL TO ACTION - CTA */
+.cta{
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.cta__book-now{
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+/* button */
+.btn{
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  
+}
+
+.btn .btn__visible{
+  display: inline-block;
+  padding: 2rem 7.5rem;
+  height: 100%;
+  width: 100%;
+  transition: all .2s;
+}
+
+.btn .btn__hidden{
+  display: inline-block;
+  position: absolute;
+  padding: 2rem 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: -100%;
+  transition: all .2s;
+  
+}
+
+.btn:hover{
+  background-image: linear-gradient(to left, var(--primary-light), var(--primary-dark));
+}
+
+.btn:hover .btn__visible{
+  transform: translateY(100%);
+}
+
+.btn:hover .btn__hidden{
+  top: 0;
+}
